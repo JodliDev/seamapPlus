@@ -1,0 +1,111 @@
+.GM_clickable:hover {
+	cursor:pointer;
+	color:#F2C44C !important;
+}
+
+.GM_minimap {
+	color:white;
+}
+.GM_minimap.hidden .GM_minimap_main, .GM_minimap.hidden .GM_mini, .GM_minimap .GM_maxi {
+	display:none;
+}
+.GM_minimap .GM_minimap_main {
+	display:block;
+}
+.GM_minimap.hidden .GM_maxi, .GM_minimap .GM_mini {
+	display:inline-block;
+}
+
+
+
+.GM_minimap.expanded .GM_expand_button {
+	transform:rotate(45deg);
+}
+.GM_minimap.expanded .GM_list {
+	position:absolute;
+	left:40px;
+	width:150px;
+}
+.GM_minimap .GM_expand_button {
+	position:absolute;
+	right:-5px;
+	top:-5px;
+	transform:rotate(225deg);
+}
+
+
+.GM_minimap .GM_list {
+	position:static;
+	width:auto;
+	float:right;
+}
+.GM_list .GM_list_item {
+	float:left;
+	padding:3px;
+	border-style:inset;
+	border-color:#46300D;
+	border-width:0 1px 1px 1px;
+	background-color:#4C3611;
+}
+.GM_list .GM_list_item.GM_selected {
+	border-width:0;
+	padding:3px 4px 4px 4px;
+	background-color:transparent;
+}
+.GM_list.GM_filter .GM_fav_menu, .GM_list.GM_filter .GM_plus_button{
+	display:none;
+}
+.GM_list.GM_filter .GM_filter_menu{
+	display:block;
+}
+.GM_list.GM_filter .GM_switcher{
+	border-style:inset;
+	background-color:#332208;
+	padding:1px 0 0 1px
+}
+.GM_list.GM_fav .GM_filter_menu{
+	display:none;
+}
+.GM_list.GM_fav .GM_fav_menu, .GM_list.GM_fav .GM_plus_button{
+	display:block;
+}
+.GM_list.GM_fav .GM_switcher{
+	border-style:outset;
+	background-color:#807048;
+	padding:0;
+}
+.GM_searchfield {
+	background-color:#4C3611;
+	border:1px inset #46300D;
+	border-radius:5px;
+	color:white;
+	width:80px;
+}
+.GM_searchfield:focus {
+	background-color: #5F4312;
+}
+
+
+.GM_island_highlight {z-index:999;
+	background-color:#a9c7dd;
+	border:2px solid white;
+	margin:-2px;
+	border-radius:20px;
+}
+.GM_island_highlight .seamapEntityInfoPanel{
+	background:#2077c4;
+	padding:0 1px 1px 0;
+	border-color:black;
+	border-style:solid;
+	border-width:0 1px 1px 0;
+}
+.GM_island_marked {
+	padding:1px;
+	border-radius:3px;
+}
+.remainingTimePanel .gwt-HTML {
+	display:none;
+}
+.GM_move_stuff .gwt-DialogBox {
+	display:none;
+}
