@@ -66,10 +66,9 @@ function GM_deleteValue(key) {
 	delete localStorage[key];
 }
 function getServer() {
-	var m = window.location.href.match(/http:\/\/(.+).escaria.com\/world\/.+/);
+	var m = window.location.href.match(/http.?:\/\/(.+).escaria.com\/world\/.+/);
 	return m ? m[1] : false;
 }
-
 
 //**********
 //classics
